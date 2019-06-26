@@ -51,10 +51,10 @@ RM = /snap/clion/73/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/utec/Lab1042019/PROYECTO-POO-2
+CMAKE_SOURCE_DIR = /home/utec/POO1-Proyecto-Final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/utec/Lab1042019/PROYECTO-POO-2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/utec/POO1-Proyecto-Final/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,9 +83,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/utec/Lab1042019/PROYECTO-POO-2/cmake-build-debug/CMakeFiles /home/utec/Lab1042019/PROYECTO-POO-2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles /home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/utec/Lab1042019/PROYECTO-POO-2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/utec/POO1-Proyecto-Final/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -126,32 +126,140 @@ game/fast:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 .PHONY : game/fast
 
-game.o: game.cpp.o
+Menu.o: Menu.cpp.o
 
-.PHONY : game.o
+.PHONY : Menu.o
 
 # target to build an object file
-game.cpp.o:
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game.cpp.o
-.PHONY : game.cpp.o
+Menu.cpp.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Menu.cpp.o
+.PHONY : Menu.cpp.o
 
-game.i: game.cpp.i
+Menu.i: Menu.cpp.i
 
-.PHONY : game.i
+.PHONY : Menu.i
 
 # target to preprocess a source file
-game.cpp.i:
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game.cpp.i
-.PHONY : game.cpp.i
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
 
-game.s: game.cpp.s
+Menu.s: Menu.cpp.s
 
-.PHONY : game.s
+.PHONY : Menu.s
 
 # target to generate assembly for a file
-game.cpp.s:
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/game.cpp.s
-.PHONY : game.cpp.s
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
+Objeto.o: Objeto.cpp.o
+
+.PHONY : Objeto.o
+
+# target to build an object file
+Objeto.cpp.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Objeto.cpp.o
+.PHONY : Objeto.cpp.o
+
+Objeto.i: Objeto.cpp.i
+
+.PHONY : Objeto.i
+
+# target to preprocess a source file
+Objeto.cpp.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Objeto.cpp.i
+.PHONY : Objeto.cpp.i
+
+Objeto.s: Objeto.cpp.s
+
+.PHONY : Objeto.s
+
+# target to generate assembly for a file
+Objeto.cpp.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Objeto.cpp.s
+.PHONY : Objeto.cpp.s
+
+Tierra.o: Tierra.cpp.o
+
+.PHONY : Tierra.o
+
+# target to build an object file
+Tierra.cpp.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Tierra.cpp.o
+.PHONY : Tierra.cpp.o
+
+Tierra.i: Tierra.cpp.i
+
+.PHONY : Tierra.i
+
+# target to preprocess a source file
+Tierra.cpp.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Tierra.cpp.i
+.PHONY : Tierra.cpp.i
+
+Tierra.s: Tierra.cpp.s
+
+.PHONY : Tierra.s
+
+# target to generate assembly for a file
+Tierra.cpp.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Tierra.cpp.s
+.PHONY : Tierra.cpp.s
+
+Tipos.o: Tipos.cpp.o
+
+.PHONY : Tipos.o
+
+# target to build an object file
+Tipos.cpp.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Tipos.cpp.o
+.PHONY : Tipos.cpp.o
+
+Tipos.i: Tipos.cpp.i
+
+.PHONY : Tipos.i
+
+# target to preprocess a source file
+Tipos.cpp.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Tipos.cpp.i
+.PHONY : Tipos.cpp.i
+
+Tipos.s: Tipos.cpp.s
+
+.PHONY : Tipos.s
+
+# target to generate assembly for a file
+Tipos.cpp.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/Tipos.cpp.s
+.PHONY : Tipos.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +270,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... game"
 	@echo "... edit_cache"
-	@echo "... game.o"
-	@echo "... game.i"
-	@echo "... game.s"
+	@echo "... Menu.o"
+	@echo "... Menu.i"
+	@echo "... Menu.s"
+	@echo "... Objeto.o"
+	@echo "... Objeto.i"
+	@echo "... Objeto.s"
+	@echo "... Tierra.o"
+	@echo "... Tierra.i"
+	@echo "... Tierra.s"
+	@echo "... Tipos.o"
+	@echo "... Tipos.i"
+	@echo "... Tipos.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

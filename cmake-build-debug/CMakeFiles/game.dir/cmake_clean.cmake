@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/game.dir/game.cpp.o"
+  "CMakeFiles/game.dir/main.cpp.o"
+  "CMakeFiles/game.dir/Tierra.cpp.o"
+  "CMakeFiles/game.dir/Objeto.cpp.o"
+  "CMakeFiles/game.dir/Tipos.cpp.o"
+  "CMakeFiles/game.dir/Menu.cpp.o"
   "game.pdb"
   "game"
 )
