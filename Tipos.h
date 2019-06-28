@@ -11,7 +11,5 @@ using namespace std;
 using TipoEntero = int;
 using TipoCaracter = char;
 using TipoString = string;
-
-
-
 #endif //GAME_TIPOS_H
+

@@ -6,15 +6,18 @@
 #include <iostream>
 #include <string>
 #include <cstdio>
+
 using namespace std;
-enum class Opciones { Agregar=1, Remover, Mostrar}; // se usa un tipo enumerado para indicar las opciones
+
+enum class Opciones { Agregar=1, Remover, Mostrar};
+
 
 void limpiar() {
     cout << "\033[2J\033[0;0H";
 }
 
 void esperar() {
-    TipoCaracter w;
+    char w;
     do {
         w = input<TipoCaracter>("Presione C y Enter para continuar...");
     }while (toupper(w) != 'C');
@@ -30,19 +33,21 @@ void Menu::imprimirMenu() {
     cout << "0. Para Salir\n\n";
 }
 
-void Menu::agregarObjeto()
-{
-    auto nombre = input<TipoString>("Ingrese Nombre : ");
+
+void Menu::agregarObjeto() {
+    auto    nombre = input<TipoString>("Ingrese Nombre : ");
     auto color  = input<TipoCaracter>("Ingrese color (Un caracter): ");
 
     auto x = input<TipoEntero>("Ingrese posicion X : ");
+
+
     while (x < 0 || x >= tierra.getAncho()) {
         cout << "Posicion X Incorrecta, los limites son: 0, "
              << tierra.getAncho() - 1 << "\n";
         x = input<TipoEntero>("Ingrese posicion X : ");
     }
 
-    auto y = input<TipoEntero>("Ingrese posicion Y : ");
+    TipoEntero y = input<TipoEntero>("Ingrese posicion Y : ");
     while (y < 0 || y >= tierra.getAncho()) {
         cout  << "Posicion Y Incorrecta, los limites son: 0, "
               << tierra.getAltura() - 1 << "\n";
@@ -55,7 +60,7 @@ void Menu::agregarObjeto()
 void Menu::removerObjeto() {
     auto nombre = input<TipoString>("Ingrese Nombre: ");
 
-    auto obj = tierra.removerObjeto(nombre);  //-- separa el objeto de la tierra
+    Objeto* obj = tierra.removerObjeto(nombre);
     if (obj == nullptr) {
         cout << "Objeto No existe\n";
     }
@@ -99,4 +104,3 @@ void Menu::seleccionarOpcion() {
             break;
     }
 }
-

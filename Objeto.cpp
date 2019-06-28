@@ -2,7 +2,9 @@
 // Created by utec on 21/06/19.
 //
 
+
 #include "Objeto.h"
+
 Objeto::Objeto(): color{}, posX{}, posY{}  {}
 
 Objeto::Objeto(const TipoString& nombre, TipoCaracter color,
@@ -23,4 +25,3 @@ TipoCaracter Objeto::getColor()  { return color; }
 TipoString Objeto::mostrarPosicion() {
     return "X = " + to_string(posX) + " Y = " + to_string(posY);
 }
-

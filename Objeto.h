@@ -4,12 +4,13 @@
 
 #ifndef GAME_OBJETO_H
 #define GAME_OBJETO_H
+
 #include <iostream>
 #include "Tipos.h"
+
 using namespace std;
-
-
 class Objeto {
+
 private:
     string        nombre;
     TipoCaracter  color;

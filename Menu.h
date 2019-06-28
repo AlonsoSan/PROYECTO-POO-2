@@ -5,11 +5,10 @@
 #ifndef GAME_MENU_H
 #define GAME_MENU_H
 
+#include <limits>
+#include <iostream>
 #include "Tierra.h"
 #include "Tipos.h"
-#include <iostream>
-#include <limits>
-using namespace std;
 
 template <typename T>
 T input(string label) {
@@ -20,18 +19,20 @@ T input(string label) {
     cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
     return value;
 }
+
 /*
 //--- Esta seria la funcion para leer un string,
-//--- esta función si se quiere generalizar para colocar un label
-//--- y leer cualquier tipo de dato se tendría que convertir al template anterior
+//--- esta funcion si se quiere generalizar para colocar un label
+//--- y leer cualquier tipo de dato se tendria que convertir al template anterior
 
 string&& input(string label) {
- string value;
- cout << label;
- cin >> value;
- return move(value);
+  string value;
+  cout << label;
+  cin >> value;
+  return move(value);
 }
-*/
+ */
+
 class Menu {
     TipoEntero opcion;
     Tierra tierra;
@@ -44,7 +45,6 @@ public:
     Menu(): opcion{} {}
     void ejecutar();
 };
-
 
 
 #endif //GAME_MENU_H
